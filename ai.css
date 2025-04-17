@@ -1,0 +1,146 @@
+
+
+
+
+* {
+  box-sizing: border-box;
+    margin:auto;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin:auto;
+    text-align: center;
+    background-image:url("images/bg copy.png")
+        
+}
+
+.container{
+   
+    
+    background-color: cadetblue;
+    width:80%;
+    
+    font-size:1.5em;
+    padding:20px;
+    
+}
+
+nav {
+    background-color:darkslategrey;
+    color: white;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+   
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    margin:auto;
+   
+
+}
+
+
+
+.hero-text {
+    position: absolute;
+    color: white;
+}
+
+h1 {
+    font-size: 3.5em;
+    text-shadow: 2px 2px 3px rgba(4, 5, 9, 0.8); 
+     color:navajowhite
+}
+
+.hero-text p {
+    font-size: 1.5em;
+}
+
+.hero-text button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color:olivedrab;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-text button:hover {
+    background-color:darkorange;
+    transform: scale(1.1);
+}
+
+section {
+    padding: 20px;
+}
+
+@media (max-width: 1200px) {
+    
+
+    .hero-text p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-text h1 {
+        font-size: 2em;
+    }
+
+    .hero-text p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 1.5em;
+    }
+
+    .hero-text p {
+        font-size: 0.8em;
+    }
+
+    .hero-text button {
+        font-size: 0.8em;
+    }
+}
+
